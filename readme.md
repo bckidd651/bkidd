@@ -89,12 +89,20 @@ csc_121/
 
 Each `module_N_readme.md` follows the same pattern:
 
-1. **Git branch** — create a branch named for the module, e.g. `git checkout -b module_0`.
-2. **Labs** — work through the labs listed in that module's readme, following the linked CS50P short.
-3. **Turn-in** — run the tests locally, and once you're happy with the result:
-   ```bash
-   git add *
-   git commit -m "module 0 labs"
-   git push
-   ```
-4. **CI** — open a pull request on GitHub for that branch. This triggers a GitHub Actions run that executes the tests and reports your score directly on the PR.
+## Working Through a Module
+
+Use this workflow for every module:
+
+1. Create a branch:
+   git checkout -b <branch-name>
+
+2. Stage your changes:
+   git add .
+
+3. Commit:
+   git commit -m "Meaningful message"
+
+4. Push:
+   git push -u origin <branch-name>
+
+5. Open a Pull Request and merge when ready.
